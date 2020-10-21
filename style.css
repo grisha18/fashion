@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #FFE8C8;
+}
+.header_border__left{
+    border-left: 32px solid  #764400;
+    height: 170vh;
+}
+.header_border__right{
+    border-right: 32px solid  #764400;
+    height: 170vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header__logo{
+    position: absolute; 
+    left: 247px;
+    top: 43px;
+}
+.header__content{
+    display: flex;
+    flex-direction: column;
+    width: 910px;
+}
+.header__title{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 104px;
+    line-height: 123px;
+    color: #A66000;
+}
+.header__block{
+    display: flex;
+    justify-content: flex-end;
+}
+.header__btn{
+    margin-top: -90px;
+    width: 273px;
+    height: 64px; 
+    background: #A66000;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewX(-25deg);
+}
+.slogan{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000000;
+}
+.header__text{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.header_block__img{
+    width: 390px;
+    height: 496px;
+    background: #A66000;
+    position: absolute;
+    left: 533px;
+    top: 310px;
+    background: #A66000;
+}
+.header__img{
+   position: absolute;
+   left: 500px;
+   top: 280px;
+}
+.header_button__block{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-top: -180px;
+}
+.header__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 103px;
+    background: #A66000;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    transform: skewX(-25deg);
+}
+.header__modal{
+    width: 420px;
+    height: 429px;
+    left: 227px;
+    top: 595px;
+    background: #A66000;
+    margin-top: 100px;
+}
+ .header__image{
+    margin-top: 21px;
+    margin-left: 21px;
+} 
