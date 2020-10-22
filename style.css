@@ -4,8 +4,11 @@
 }
 body{
     background: #FFE8C8;
+    border-left: 32px solid #764400;
+    border-right: 32px solid #764400;
+    height: 100vh;
 }
-.header_border__left{
+/* .header_border__left{
     border-left: 32px solid  #764400;
     height: 170vh;
 }
@@ -15,11 +18,22 @@ body{
     position: absolute;
     top: 0;
     right: 0;
+} */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65em;
 }
 .header__logo{
-    position: absolute; 
-    left: 247px;
-    top: 43px;
+    align-self: start;
 }
 .header__content{
     display: flex;
@@ -52,7 +66,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: skewX(-25deg);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.main-left, .main-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
 }
 .slogan{
     font-family: Roboto;
@@ -76,21 +102,26 @@ body{
     width: 390px;
     height: 496px;
     background: #A66000;
-    position: absolute;
-    left: 533px;
-    top: 310px;
     background: #A66000;
 }
-.header__img{
-   position: absolute;
-   left: 500px;
-   top: 280px;
+.girl-img{
+    position: relative;
 }
+.girl-img::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: #A66000;
+  z-index: -1;
+}
+
 .header_button__block{
     display: flex;
     justify-content: flex-end;
-    margin-right: 150px;
-    margin-top: -180px;
+
 }
 .header__button{
     display: flex;
@@ -106,16 +137,28 @@ body{
     line-height: 56px;
     color: #FFFFFF;
     transform: skewX(-25deg);
+    position: relative;
+
 }
-.header__modal{
-    width: 420px;
-    height: 429px;
-    left: 227px;
-    top: 595px;
+.header__button::after{
+    content: 'Shop Now';
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    transform: skewX(25deg);
+}
+
+.header__image{
+    position: relative;
+}
+ .header__image::after{
+    content: '';
+    width: 100%;
+    height: 100%;
     background: #A66000;
-    margin-top: 100px;
-}
- .header__image{
-    margin-top: 21px;
-    margin-left: 21px;
+    position: absolute;
+    right: 30px;
+    top: -10px;
+    z-index: -1; 
 } 
